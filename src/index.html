@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- build:css css/style.css -->
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <script src="../bower_components/angular/angular.js"></script>
+        <!-- endbuild -->
     </head>
     <body ng-app="demo">
         <div class="container" ng-controller="DemoController">
@@ -30,7 +31,10 @@
                 <button class="btn btn-primary" ng-disabled="sampleForm.$invalid">Pošlji</button>
             </form>
         </div>
+        <!-- build:js js/all.js -->
+        <script src="../bower_components/angular/angular.js"></script>
         <script src="app.js"></script>
         <script src="components/pacifica/demoController.js"></script>
+        <!-- endbuild -->
     </body>
 </html>
